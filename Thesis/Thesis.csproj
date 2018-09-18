@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD651C26-31BE-4649-A9AB-F37395ACE287}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thesis</RootNamespace>
+    <AssemblyName>Thesis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Employee\Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\TransactionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\TransactionHistory.Designer.cs">
+      <DependentUpon>TransactionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Administrator\Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\SupplyTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\SupplyTransaction.Designer.cs">
+      <DependentUpon>SupplyTransaction.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Employee\Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\TransactionHistory.resx">
+      <DependentUpon>TransactionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Administrator\Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\SupplyTransaction.resx">
+      <DependentUpon>SupplyTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dgolz.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dgolz1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton-27.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backround.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backround1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OKay.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventory.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backround2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventory1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17820771_1268978599887300_469239470_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17857319_1268985929886567_1235508659_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17857319_1268985929886567_1235508659_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17820771_1268978599887300_469239470_n1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

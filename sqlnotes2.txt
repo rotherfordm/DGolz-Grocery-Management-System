@@ -1,0 +1,149 @@
+CREATE DATABASE DGOLZMART2
+USE DGOLZMART2
+
+
+CREATE TABLE Products
+(
+ProductID int identity (1001,1) primary key,
+ProductName varchar(50),
+Stock numeric,
+Price numeric,
+ItemDesc varchar(50),
+Manufacturer varchar(50),
+ManuDate DateTime
+)
+
+
+select ProductID, ProductName, Stock, Price, ItemDesc,
+ Manufacturer, ManuDate from Products
+
+CREATE TABLE Employee
+(
+EmployeeID int identity (101,1) primary key,
+FirstName varchar(50),
+MiddleInitial varchar(50),
+LastName varchar(50),
+ContactNumber varchar(50),
+Email varchar(50)
+)
+
+
+
+
+SELECT FirstName, MiddleInitial, LastName, ContactNumber, Email FROM Employee
+
+
+
+INSERT INTO Employee
+(FirstName,MiddleInitial,LastName,ContactNumber,Email)
+VALUES
+('Dorritos','M','Man','209-374','dorritosmant@gmail.com')
+
+
+
+
+
+
+update Employee
+set FirstName = '',MiddleInitial = '',LastName='',ContactNumber = '',Email = '',Address = ''
+where EmployeeID = ''
+
+
+
+
+
+
+0-0-=asdisakjhdas
+
+
+
+
+
+
+CREATE TABLE Products
+(
+ProductID int identity (1001,1) primary key,
+ProductName varchar(50),
+CurrentStock numeric,
+StockFromSupplier numeric,
+StockSold numeric,
+ItemDesc varchar(50),
+Price numeric
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE Products
+(
+ProductID int identity (1001,1) primary key,
+ProductName varchar(50),
+StockFromSupplier numeric,
+StockSold numeric,
+ItemDesc varchar(50),
+Price numeric,
+SupplierID int
+)
+
+Select * FRom Products
+Select * From Employee
+
+Insert Into Products
+(ProductName,SupplierID,ItemDesc,StockFromSupplier,StockSold,Price)
+values
+('Mt. Dew','115','Drinks','4','3','20')
+
+Select * From Products
+
+Select ProductName,StockFromSupplier - StockSold AS  TotalStocks From Products
+
+
+select ProductID, ProductName, StockFromSupplier - StockSold AS  CurentStocks, StockFromSupplier, StockSold, ItemDesc, Price from Products
+
+
+
+
+select ProductID, ProductName, Price,ItemDesc,CompanyName
+from Products 
+Inner join  Supplier on Products.SupplierID = Supplier.SupplierID
+
+update Products set Price = '' where ProductID = ''
+
+
+Create table SupplyTrans
+(
+SupplyTransID int identity(3001,1) primary key,
+ProductID int,
+SupplierID int,
+)
+
+
+insert into SupplyTrans
+(ProductID,SupplierID)
+Values
+('1001','115')
+
+Select SupplyTransID, Products.ProductID, ProductName, CompanyName, StockFromSupplier
+From SupplyTrans
+inner join Products on   Products.ProductID = SupplyTrans.ProductID
+Inner join Supplier on  Supplier.SupplierID = SupplyTrans.SupplierID
