@@ -19,13 +19,10 @@ namespace Thesis
         }
 
         #region  Sql Connection Initialization
-
         //starts connection to sql server
-        SqlConnection con = new SqlConnection
-        (@"server =HEATZ\SQLEXPRESS; Initial Catalog =DGOLZMART2; Integrated Security = true;");
+        SqlConnection con = DatabaseHandler.GetNewConnection();
         SqlCommand cmd;
         SqlDataReader rdr;
-
         #endregion
 
         private void btnBack_Click(object sender, EventArgs e)

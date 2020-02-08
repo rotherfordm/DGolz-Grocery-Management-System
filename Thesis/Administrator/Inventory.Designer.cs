@@ -202,9 +202,9 @@
             // txtProductID
             // 
             this.txtProductID.Enabled = false;
-            this.txtProductID.Location = new System.Drawing.Point(555, 75);
+            this.txtProductID.Location = new System.Drawing.Point(1424, 720);
             this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(100, 20);
+            this.txtProductID.Size = new System.Drawing.Size(10, 20);
             this.txtProductID.TabIndex = 21;
             this.txtProductID.Visible = false;
             // 
@@ -226,7 +226,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Enabled = false;
-            this.label2.Location = new System.Drawing.Point(462, 82);
+            this.label2.Location = new System.Drawing.Point(1331, 727);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 25;
@@ -271,9 +271,9 @@
             // txtSupplierID
             // 
             this.txtSupplierID.Enabled = false;
-            this.txtSupplierID.Location = new System.Drawing.Point(555, 40);
+            this.txtSupplierID.Location = new System.Drawing.Point(1293, 720);
             this.txtSupplierID.Name = "txtSupplierID";
-            this.txtSupplierID.Size = new System.Drawing.Size(100, 20);
+            this.txtSupplierID.Size = new System.Drawing.Size(10, 20);
             this.txtSupplierID.TabIndex = 50;
             this.txtSupplierID.Visible = false;
             // 
@@ -281,7 +281,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Enabled = false;
-            this.label12.Location = new System.Drawing.Point(462, 47);
+            this.label12.Location = new System.Drawing.Point(1200, 727);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 13);
             this.label12.TabIndex = 51;
@@ -357,10 +357,10 @@
             this.ProductNamesup,
             this.ProductCode2});
             this.dataAddSuppliesToProducts.Enabled = false;
-            this.dataAddSuppliesToProducts.Location = new System.Drawing.Point(673, 12);
+            this.dataAddSuppliesToProducts.Location = new System.Drawing.Point(1100, 727);
             this.dataAddSuppliesToProducts.Name = "dataAddSuppliesToProducts";
             this.dataAddSuppliesToProducts.ReadOnly = true;
-            this.dataAddSuppliesToProducts.Size = new System.Drawing.Size(347, 67);
+            this.dataAddSuppliesToProducts.Size = new System.Drawing.Size(10, 10);
             this.dataAddSuppliesToProducts.TabIndex = 61;
             this.dataAddSuppliesToProducts.Visible = false;
             // 
@@ -422,10 +422,10 @@
             this.SupplierID,
             this.CompanyName});
             this.dataSupplier.Enabled = false;
-            this.dataSupplier.Location = new System.Drawing.Point(1045, 12);
+            this.dataSupplier.Location = new System.Drawing.Point(1148, 727);
             this.dataSupplier.Name = "dataSupplier";
             this.dataSupplier.ReadOnly = true;
-            this.dataSupplier.Size = new System.Drawing.Size(348, 67);
+            this.dataSupplier.Size = new System.Drawing.Size(10, 10);
             this.dataSupplier.TabIndex = 62;
             this.dataSupplier.Visible = false;
             // 
@@ -473,8 +473,6 @@
             this.ClientSize = new System.Drawing.Size(1468, 762);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.dataSupplier);
-            this.Controls.Add(this.dataAddSuppliesToProducts);
             this.Controls.Add(this.ComboSupplierName);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label6);
@@ -484,17 +482,19 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.txtProductID);
-            this.Controls.Add(this.txtSupplierID);
             this.Controls.Add(this.btnUpdateProduct);
             this.Controls.Add(this.txtItemDescription);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataProduct);
+            this.Controls.Add(this.dataSupplier);
+            this.Controls.Add(this.dataAddSuppliesToProducts);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtProductID);
+            this.Controls.Add(this.txtSupplierID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmInventory";
