@@ -5,9 +5,9 @@ This project was a requirement for the subject System Analysis and Design CCS250
 
 ## Table of Contents
 
-1.  [Built With](https://github.com/HeatzRM/TF-IDF#built-with)
-2.  [Examples](https://github.com/HeatzRM/TF-IDF#examples)
-3.  [References](https://github.com/HeatzRM/TF-IDF#references)
+1.  [Built With](https://github.com/HeatzRM/DGolz-Grocery-Management-System#built-with)
+2.  [Screenshots](https://github.com/HeatzRM/DGolz-Grocery-Management-System#screenshots)
+3.  [References](https://github.com/HeatzRM/DGolz-Grocery-Management-System#references)
 
 ## Built With
 
