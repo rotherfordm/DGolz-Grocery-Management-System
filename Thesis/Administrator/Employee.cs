@@ -87,7 +87,7 @@ namespace Thesis
 
                     con.Open();
                     cmd = new SqlCommand(@"INSERT INTO Employee
-                      (FirstName, MiddleName, LastName, Address, ContactNumber, Email, UserName, Password, IsAdmin) 
+                      (FirstName, MiddleInitial, LastName, Address, ContactNumber, Email, UserName, Password, IsAdmin) 
                        VALUES
                        ('" + txtFirstName.Text + "','" + txtMiddleInitial.Text + "','" + txtLastName.Text + "'," +
                     "'" + txtContactNumber.Text + "','" + txtEmail.Text + "', '" + txtEmployeeAddress.Text + "'" +
